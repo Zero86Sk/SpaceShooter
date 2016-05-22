@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerShoot : MonoBehaviour {
 
     public GameObject bullet;
+    public float shotDelay = 0.2f;
 
 	// Use this for initialization
 	void Start ()
