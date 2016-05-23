@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BulletMovement : MonoBehaviour {
+public class ForwardMovement : MonoBehaviour {
 
     public float speed = 1.0f;
 
@@ -14,10 +14,10 @@ public class BulletMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        Bullet ();
+        MoveForward ();
 	}
 
-    void Bullet ()
+    void MoveForward ()
     {
         transform.position += transform.forward * speed * Time.deltaTime;
     }

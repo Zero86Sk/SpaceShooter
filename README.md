@@ -5,12 +5,10 @@ Test Project, Trying to learn coding in Unity, Just having fun :)
 
 # Things to be Worked on
 - Working title
-- Basic Gameplay
 - Add more Bullet types
 - Bullet / Power-up system
 - Levles, Bosses, Waves etc
 - Score System
-- Game Over State
 - Menu System
 - Basic UI
 - Better art
@@ -22,3 +20,28 @@ Test Project, Trying to learn coding in Unity, Just having fun :)
 
 
 # Milestones Reached
+- Basic gameplay (Enemies spawn, you can shoot them)
+- Game Over State
+
+# Version Changelog
+-v0.01
+basic menu
+moving ship around
+shoting
+basic enemy
+
+-v0.02
+added explosions to enemies
+minor fixes
+
+-v0.03
+added game-over state with menu
+added explosion to player
+minor gameplay tweaks
+
+- v0.04
+added more bullet patterns (not accessable yet)
+changed from horizontal shooter to vertical shooter
+added basic wave pattern ai
+added object spawner
+minor gameplay tweaks
