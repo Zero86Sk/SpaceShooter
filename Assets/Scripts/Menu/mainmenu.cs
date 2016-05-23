@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class mainmenu : MonoBehaviour {
@@ -23,26 +21,31 @@ public class mainmenu : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
     }
 
-    public void StartGame() {
+    public void StartGame()
+    {
         SceneManager.LoadScene(startLevel);
         Debug.Log("Start Game");
     }
 
-    public void LoadGame() {
+    public void LoadGame()
+    {
         SceneManager.LoadScene(loadLevel);
         Debug.Log("Load Game");
     }
 
-    public void Settings() {
+    public void Settings()
+    {
         SceneManager.LoadScene(settings);
         Debug.Log("Settings");
     }
 
-    public void Exit() {
+    public void Exit()
+    {
         Application.Quit();
         Debug.Log("Quit Game");
     }

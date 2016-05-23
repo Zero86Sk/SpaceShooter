@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class gameovermenu : MonoBehaviour {
@@ -12,7 +10,8 @@ public class gameovermenu : MonoBehaviour {
     //public GameObject defaultButton;
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         /*
                 if (defaultButton != null)
                 {
@@ -22,19 +21,23 @@ public class gameovermenu : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
     }
 
-    public void MainMenu() {
+    public void MainMenu()
+    {
         SceneManager.LoadScene(mainMenu);
     }
 
-    public void Restart() {
+    public void Restart()
+    {
         SceneManager.LoadScene(restartLevel);
     }
 
-    public void Exit() {
+    public void Exit()
+    {
         Application.Quit();
         Debug.Log("Quit Game");
     }
