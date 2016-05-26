@@ -23,8 +23,10 @@ Test Project, Trying to learn coding in Unity, Just having fun :)
 - Basic gameplay (Enemies spawn, you can shoot them)
 - Game Over State
 
+
 # Version Change log
 - v0.01, basic menu, moving ship around, shooting, basic enemy
 - v0.02, added explosions to enemies, minor fixes
 - v0.03, added game-over state with menu, added explosion to player, other minor gameplay tweaks
 - v0.04, added more bullet patterns (not accessible yet), changed from horizontal shooter to vertical shooter, added basic wave pattern AI, added object spawner, other minor gameplay tweaks
+- v0.05, added targeting enemies, added missiles (needs tweaking), cleaned up some code, changed rotations on objects

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ForwardMovement : MonoBehaviour {
 
-    public float speed = 1.0f;
+    public float speed = 25.0f;
 
     // Use this for initialization
     void Start ()

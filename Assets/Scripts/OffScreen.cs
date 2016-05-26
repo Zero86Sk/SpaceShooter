@@ -15,6 +15,6 @@ public class OffScreen : MonoBehaviour {
         {
             Destroy(destroyTarget);
         }
-        //Debug.Log(gameObject + " destroyed!");
+        //Debug.Log(destroyTarget + " destroyed!");
     }
 }
