@@ -126,7 +126,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 116808, guid: 46adc3379c5fa12448480a7a45693230, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 46adc3379c5fa12448480a7a45693230, type: 2}
@@ -248,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 1
   moveTime: 1
+  waitTime: 1
 --- !u!1001 &911854966
 Prefab:
   m_ObjectHideFlags: 0
