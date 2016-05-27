@@ -58,24 +58,29 @@ public class pausemenu : MonoBehaviour {
 
     }
 
-    public void PauseMenu() {
+    public void PauseMenu()
+    {
         isPaused = !isPaused;
         //Debug.Log("Paused");
     }
 
-    public void Continue() {
+    public void Continue()
+    {
         isPaused = false;
     }
 
-    public void Restart() {
+    public void Restart()
+    {
         SceneManager.LoadScene(restartLevel);
     }
 
-    public void MainMenu() {
+    public void MainMenu()
+    {
         SceneManager.LoadScene(mainMenu);
     }
 
-    public void Exit() {
+    public void Exit()
+    {
         Application.Quit();
         Debug.Log("Quit Game");
     }

@@ -38,7 +38,7 @@ public class SeekingMissile : MonoBehaviour {
         missle.AddForce(transform.forward * missleAccelerationForce * Time.deltaTime, ForceMode.Acceleration);
 
       //if (missle.velocity.magnitude > maxVelocity)
-        if (missle.velocity.sqrMagnitude >= maxSqrVelocity)
+        if (missle.velocity.sqrMagnitude > maxSqrVelocity)
         {
            //Debug.Log("Missle Velocity Is: " + missle.velocity.magnitude);
 

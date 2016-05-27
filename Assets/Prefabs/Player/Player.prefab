@@ -31,7 +31,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &151506
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,7 +79,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &186888
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,13 +89,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 465660}
   - 114: {fileID: 11418580}
+  - 114: {fileID: 11437242}
   m_Layer: 10
   m_Name: PlayerShoot3-up
   m_TagString: Bullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &192960
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,13 +106,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 415150}
   - 114: {fileID: 11445996}
+  - 114: {fileID: 11421550}
   m_Layer: 10
   m_Name: PlayerShoot3-down
   m_TagString: Bullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &198890
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,7 +141,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132716}
-  m_LocalRotation: {x: 0.6828947, y: 0.18304439, z: 0.18298116, w: 0.68313074}
+  m_LocalRotation: {x: 0.68289465, y: 0.18304437, z: 0.18298115, w: 0.6831307}
   m_LocalPosition: {x: 0.29999524, y: 0.000000035762223, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -163,8 +165,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192960}
-  m_LocalRotation: {x: -0.1830128, y: -0.6830129, z: -0.6830125, w: -0.18301274}
-  m_LocalPosition: {x: 0.2, y: 0, z: 0}
+  m_LocalRotation: {x: -0.061629295, y: -0.704416, z: -0.70441604, w: -0.061627865}
+  m_LocalPosition: {x: 0.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 484078}
@@ -187,8 +189,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186888}
-  m_LocalRotation: {x: 0.18301259, y: -0.6830129, z: -0.68301255, w: 0.18301295}
-  m_LocalPosition: {x: -0.2, y: 0, z: 0}
+  m_LocalRotation: {x: -0.061628222, y: 0.70441604, z: 0.70441604, w: -0.061628938}
+  m_LocalPosition: {x: -0.3, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 484078}
@@ -274,8 +276,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46252862e91e71429d45c09e0da4cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 135082, guid: f5372e177c1035f4d9661e53e466feb9, type: 2}
-  shotDelay: 0.2
+  bullet: {fileID: 113388, guid: 395f810423917f542bf4c1ab2c9c8bf4, type: 2}
+  shotDelay: 0
+--- !u!114 &11421550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2baa9220eb3fb4e8a4c9a377c3f57f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startRotation: 0
+  endRotation: 45
+  rotationTime: 1
 --- !u!114 &11422976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -300,7 +316,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ff1d703fa5de14facc50c0f706bab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boom: {fileID: 184054, guid: 8d0c79006d70930449b4fa721e5a9b7b, type: 2}
+  particle: {fileID: 184054, guid: 8d0c79006d70930449b4fa721e5a9b7b, type: 2}
+--- !u!114 &11437242
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2baa9220eb3fb4e8a4c9a377c3f57f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startRotation: 0
+  endRotation: -45
+  rotationTime: 1
 --- !u!114 &11437352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -336,8 +366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46252862e91e71429d45c09e0da4cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 135082, guid: f5372e177c1035f4d9661e53e466feb9, type: 2}
-  shotDelay: 0.2
+  bullet: {fileID: 113388, guid: 395f810423917f542bf4c1ab2c9c8bf4, type: 2}
+  shotDelay: 0
 --- !u!114 &11467714
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -374,8 +404,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46252862e91e71429d45c09e0da4cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 135082, guid: f5372e177c1035f4d9661e53e466feb9, type: 2}
-  shotDelay: 0.2
+  bullet: {fileID: 113388, guid: 395f810423917f542bf4c1ab2c9c8bf4, type: 2}
+  shotDelay: 0
 --- !u!114 &11488256
 MonoBehaviour:
   m_ObjectHideFlags: 1

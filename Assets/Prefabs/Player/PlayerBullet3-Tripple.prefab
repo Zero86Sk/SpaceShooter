@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11417908}
   - 114: {fileID: 11469670}
   m_Layer: 10
-  m_Name: PlayerBullet2
+  m_Name: PlayerBullet3-Tripple
   m_TagString: PlayerBullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
