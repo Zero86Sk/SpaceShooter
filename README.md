@@ -25,7 +25,9 @@ Test Project, Trying to learn coding in Unity, Just having fun :)
 
 
 # Version Change log
-- v0.01, basic menu, moving ship around, shooting, basic enemy
+- v0.01, 
+* basic menu, 
+* moving ship around, shooting, basic enemy
 - v0.02, added explosions to enemies, minor fixes
 - v0.03, added game-over state with menu, added explosion to player, other minor gameplay tweaks
 - v0.04, added more bullet patterns (not accessible yet), changed from horizontal shooter to vertical shooter, added basic wave pattern AI, added object spawner, other minor gameplay tweaks

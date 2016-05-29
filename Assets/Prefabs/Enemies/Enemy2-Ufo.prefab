@@ -8,10 +8,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 449500}
-  - 65: {fileID: 6535714}
+  - 135: {fileID: 13591408}
   - 54: {fileID: 5457008}
-  - 114: {fileID: 11446724}
   - 95: {fileID: 9524350}
+  - 114: {fileID: 11479598}
+  - 114: {fileID: 11425388}
   m_Layer: 9
   m_Name: Enemy2-Ufo
   m_TagString: Enemies
@@ -42,8 +43,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117938}
   m_LocalRotation: {x: 0.5000001, y: -0.5, z: -0.5, w: 0.49999994}
-  m_LocalPosition: {x: -1.51, y: -0.5, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.2, y: 0.39, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children:
   - {fileID: 478650}
   m_Father: {fileID: 0}
@@ -75,18 +76,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6535714
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117938}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &9524350
 Animator:
   serializedVersion: 3
@@ -104,7 +93,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11446724
+--- !u!114 &11425388
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -112,10 +101,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 117938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53ff1d703fa5de14facc50c0f706bab7, type: 3}
+  m_Script: {fileID: 11500000, guid: 360b2ffd051f62247a135df2bdf809ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle: {fileID: 184054, guid: 474723f5988d9a14396b7229f1f250fd, type: 2}
+  initialHealth: 100
+  particleOnHit: {fileID: 184054, guid: 9b68da37c485f76409b9dd487969a864, type: 2}
+  particleOnDeath: {fileID: 184054, guid: 474723f5988d9a14396b7229f1f250fd, type: 2}
+--- !u!114 &11479598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27cf41dc1a29ffb44b1004c3d37af14d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 2
+  moveTime: 5
+  waitTime: 1
+--- !u!135 &13591408
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &21265770
 SpriteRenderer:
   m_ObjectHideFlags: 1

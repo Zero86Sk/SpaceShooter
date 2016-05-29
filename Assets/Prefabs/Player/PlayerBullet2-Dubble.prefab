@@ -11,7 +11,7 @@ GameObject:
   - 65: {fileID: 6555842}
   - 54: {fileID: 5445200}
   - 114: {fileID: 11417908}
-  - 114: {fileID: 11471130}
+  - 114: {fileID: 11462770}
   m_Layer: 10
   m_Name: PlayerBullet2-Dubble
   m_TagString: PlayerBullets
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTarget: {fileID: 113388}
---- !u!114 &11471130
+--- !u!114 &11462770
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -162,10 +162,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 113388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53ff1d703fa5de14facc50c0f706bab7, type: 3}
+  m_Script: {fileID: 11500000, guid: 887e92da8037e2c469f9c4afd6a5b643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boom: {fileID: 0}
+  particle: {fileID: 0}
 --- !u!212 &21260390
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -11,7 +11,7 @@ GameObject:
   - 65: {fileID: 6597000}
   - 54: {fileID: 5429362}
   - 114: {fileID: 11456222}
-  - 114: {fileID: 11421036}
+  - 114: {fileID: 11479820}
   m_Layer: 10
   m_Name: PlayerBullet1-Single
   m_TagString: PlayerBullets
@@ -88,18 +88,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &11421036
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53ff1d703fa5de14facc50c0f706bab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boom: {fileID: 0}
 --- !u!114 &11456222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,6 +100,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
+--- !u!114 &11479820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887e92da8037e2c469f9c4afd6a5b643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 0}
 --- !u!114 &11487632
 MonoBehaviour:
   m_ObjectHideFlags: 1
