@@ -17,11 +17,15 @@ Test Project, Trying to learn coding in Unity, Just having fun :)
 
 
 ## Bugs
-
+- OnGUI buggs me with errors
+- GameManager throws me to gameover if Player isnt present etc
 
 ## Milestones Reached
 - Basic gameplay (Enemies spawn, you can shoot them)
 - Game Over State
+- Score System (still buggy)
+- Save System
+- Boss has phases and moves (animations)
 
 
 ## Version Change log
@@ -67,3 +71,12 @@ Test Project, Trying to learn coding in Unity, Just having fun :)
 - added hit effects to enemies
 - cleaned up code
 - other minor fixes
+
+### v0.08
+- score System (still buggy)
+- save System
+- boss has phases and moves (animations)
+- code tweaks
+- fixed laser hitboxes
+- replaced background
+- fucked up game manager

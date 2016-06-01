@@ -19,13 +19,13 @@ public class PlayerShoot : MonoBehaviour {
     {
 	if (Input.GetButton("Fire1") && readyToFire)
         {
-            Bullet1 ();
+            Shoot ();
             readyToFire = false;
             Invoke("ResetReadyToFire", shotDelay);
         }
 	}
 
-    void Bullet1 ()
+    void Shoot ()
     {
         Instantiate(bullet, transform.position, transform.rotation);
     }

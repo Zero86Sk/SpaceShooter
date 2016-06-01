@@ -7,6 +7,8 @@ public class RandomLinearMovement : MonoBehaviour {
     public float moveTime = 1.0f;
     public float waitTime = 1.0f;
 
+    public bool remainNearInitialPosition = false;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -22,7 +24,6 @@ public class RandomLinearMovement : MonoBehaviour {
     IEnumerator RandomMove()
     {
         float t = 0.0f;
-
         float currentMoveTime = moveTime; // Fixes Buffer overflow while in editing
 
         Vector3 initialPosition = transform.position; // Where We are coming from

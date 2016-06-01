@@ -45,17 +45,17 @@ TagManager:
   - name: Background
     uniqueID: 1459898939
     locked: 0
-  - name: EnemyBullet
-    uniqueID: 703548039
-    locked: 0
-  - name: Bullet
+  - name: PlayerBullet
     uniqueID: 3821513547
-    locked: 0
-  - name: Enemy
-    uniqueID: 2707852387
     locked: 0
   - name: Player
     uniqueID: 316126625
+    locked: 0
+  - name: EnemyBullet
+    uniqueID: 703548039
+    locked: 0
+  - name: Enemy
+    uniqueID: 2707852387
     locked: 0
   - name: Default
     uniqueID: 0

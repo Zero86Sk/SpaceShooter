@@ -40,8 +40,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startLevel: rm_level1
-  loadLevel: 
+  loadLevel: rm_level1
   settings: 
+  loadGameButton: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -39,9 +39,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180ea1a57d52aa4ea34640ac3d8afaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: mainmenu
-  gameOverMenu: gameover
-  deathTimeLeft: 1
+  mainMenu: main_menu
+  gameOverMenu: gameover_menu
+  deathTimer: 1
+  score: 0
+  scoreText: {fileID: 0}
+  highScoreText: {fileID: 0}
+  lastScoreText: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -34,6 +34,9 @@ public class gameovermenu : MonoBehaviour {
     public void Restart()
     {
         SceneManager.LoadScene(restartLevel);
+
+        //Loads Game
+        GameManager.gmngr.LoadGame();
     }
 
     public void Exit()

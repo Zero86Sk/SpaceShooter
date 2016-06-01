@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11422976}
   m_Layer: 10
   m_Name: PlayerMissle-down
-  m_TagString: Bullets
+  m_TagString: PlayerBullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -27,7 +27,7 @@ GameObject:
   - 114: {fileID: 11477384}
   m_Layer: 10
   m_Name: PlayerShoot3-center
-  m_TagString: Bullets
+  m_TagString: PlayerBullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +43,7 @@ GameObject:
   - 114: {fileID: 11488256}
   m_Layer: 10
   m_Name: PlayerShoot2
-  m_TagString: Bullets
+  m_TagString: PlayerBullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ GameObject:
   - 114: {fileID: 11473584}
   m_Layer: 10
   m_Name: PlayerMissle-up
-  m_TagString: Bullets
+  m_TagString: PlayerBullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75,7 +75,7 @@ GameObject:
   - 114: {fileID: 11437352}
   m_Layer: 10
   m_Name: PlayerShoot1
-  m_TagString: Bullets
+  m_TagString: PlayerBullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -92,7 +92,7 @@ GameObject:
   - 114: {fileID: 11437242}
   m_Layer: 10
   m_Name: PlayerShoot3-up
-  m_TagString: Bullets
+  m_TagString: PlayerBullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,7 +109,7 @@ GameObject:
   - 114: {fileID: 11421550}
   m_Layer: 10
   m_Name: PlayerShoot3-down
-  m_TagString: Bullets
+  m_TagString: PlayerBullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
