@@ -125,8 +125,9 @@ GameObject:
   - 212: {fileID: 21299826}
   - 54: {fileID: 5425894}
   - 65: {fileID: 6551482}
+  - 95: {fileID: 9566818}
   - 114: {fileID: 11467714}
-  - 114: {fileID: 11433482}
+  - 114: {fileID: 11434446}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -264,6 +265,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &9566818
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198890}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe5665353646cd046ae0920c643ab53f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11418580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -303,7 +321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 115858, guid: 66a583baf903e4e4f802d678e642f0be, type: 2}
   shotDelay: 2
---- !u!114 &11433482
+--- !u!114 &11434446
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -311,10 +329,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 198890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 887e92da8037e2c469f9c4afd6a5b643, type: 3}
+  m_Script: {fileID: 11500000, guid: f3d1e08bad4a64b4281b07d6e41e2ab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle: {fileID: 184054, guid: 8d0c79006d70930449b4fa721e5a9b7b, type: 2}
+  initialHealth: 1
+  particleOnHit: {fileID: 184054, guid: 07f6054f437c1df4f9b65553792afdfa, type: 2}
+  particleOnDeath: {fileID: 184054, guid: 8d0c79006d70930449b4fa721e5a9b7b, type: 2}
 --- !u!114 &11437242
 MonoBehaviour:
   m_ObjectHideFlags: 1

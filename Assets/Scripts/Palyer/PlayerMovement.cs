@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -26,6 +26,6 @@ public class PlayerMovement : MonoBehaviour {
 
     void MouseMovement()
     {
-            transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0.0f) * speed * Time.deltaTime;
+        transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0.0f) * speed * Time.deltaTime;
     }
 }

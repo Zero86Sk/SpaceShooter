@@ -2,9 +2,10 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 using System.IO;
 
-public class mainmenu : MonoBehaviour {
+public class MainMenu : MonoBehaviour {
 
     public string startLevel;
     public string loadLevel;
@@ -21,8 +22,7 @@ public class mainmenu : MonoBehaviour {
         {
         loadGameButton.interactable = true;
         }
-
-        if (File.Exists(Application.persistentDataPath + "/SaveGame.sav") == false)
+        else if (File.Exists(Application.persistentDataPath + "/SaveGame.sav") == false)
         {
             loadGameButton.interactable = false;
         }
@@ -41,11 +41,12 @@ public class mainmenu : MonoBehaviour {
 
     }
 
+    // MENU OPTIONS
+
     public void NewGame()
     {
         SceneManager.LoadScene(startLevel);
         Debug.Log("Start Game");
-
     }
 
     public void LoadGame()
@@ -53,7 +54,6 @@ public class mainmenu : MonoBehaviour {
         SceneManager.LoadScene(loadLevel);
         Debug.Log("Load Game");
 
-        //Loads Game
         GameManager.gmngr.LoadGame();
     }
 

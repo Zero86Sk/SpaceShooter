@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class gameovermenu : MonoBehaviour {
+public class GameOverMenu : MonoBehaviour {
 
     public string mainMenu;
     public string restartLevel;
@@ -25,6 +25,8 @@ public class gameovermenu : MonoBehaviour {
     {
 
     }
+
+    // MENU OPTIONS
 
     public void MainMenu()
     {

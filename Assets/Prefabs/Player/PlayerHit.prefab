@@ -12,7 +12,7 @@ GameObject:
   - 199: {fileID: 19913692}
   - 114: {fileID: 11415730}
   m_Layer: 0
-  m_Name: EnemyHit
+  m_Name: PlayerHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1540,7 +1540,7 @@ ParticleSystemRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: df49ff5052d4d1e42bb14b7d1002f75b, type: 2}
+  - {fileID: 2100000, guid: 816956aab342b60408b9c0d2159b9ccb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1

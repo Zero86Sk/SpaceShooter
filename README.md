@@ -19,11 +19,12 @@ Test Project, Trying to learn coding in Unity, Just having fun :)
 ## Bugs
 - OnGUI buggs me with errors
 - GameManager throws me to gameover if Player isnt present etc
+- Score system dosnt work
+- Pause menu dosnt work right, when user clicks or fires, bullet apears, if menu not in focus gamepad dosnt work
 
 ## Milestones Reached
 - Basic gameplay (Enemies spawn, you can shoot them)
 - Game Over State
-- Score System (still buggy)
 - Save System
 - Boss has phases and moves (animations)
 
@@ -73,10 +74,17 @@ Test Project, Trying to learn coding in Unity, Just having fun :)
 - other minor fixes
 
 ### v0.08
-- score System (still buggy)
-- save System
+- score system (still buggy)
+- save system
 - boss has phases and moves (animations)
 - code tweaks
 - fixed laser hitboxes
 - replaced background
 - fucked up game manager
+
+### v0.09
+- added player health
+- added player hit
+- added pause menu
+- cleaned up asset folders
+- cleaned up code

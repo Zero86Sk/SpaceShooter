@@ -1,25 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyHealth : MonoBehaviour {
+public class PlayerHealth : MonoBehaviour {
 
-    private GameObject enemyShip;
+    private GameObject playerShip;
 
-    public int initialHealth = 100;
+    public int initialHealth = 1;
     private int currentHealth;
 
     // Particle var
     public GameObject particleOnHit;
     public GameObject particleOnDeath;
 
-    // Score var
-    public float enemyScore = 10.0f;
-
     // Use this for initialization
     void Start ()
     {
         currentHealth = initialHealth;
 	}
+
+    void update ()
+    {
+
+    }
 
     void OnTriggerEnter (Collider col)
     {
@@ -37,8 +39,6 @@ public class EnemyHealth : MonoBehaviour {
             {
                 Instantiate(particleOnDeath, transform.position, particleOnDeath.transform.rotation);
             }
-
-            GameManager.gmngr.score += enemyScore; // Adds points to score when Enemy dies (van edit value in editor)
             Destroy(gameObject);
         }
     }

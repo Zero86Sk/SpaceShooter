@@ -21,7 +21,8 @@ public class InfScrollingBackground : MonoBehaviour {
         if (playerShip != null)
         {
             horizontalScrolling ();
-        } else
+        }
+        else
         {
             playerShip = GameObject.FindGameObjectWithTag("Player");
         }

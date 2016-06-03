@@ -8,8 +8,10 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class GameManager : MonoBehaviour {
 
+    //        if (SceneManager.GetActiveScene().name != mainMenu || SceneManager.GetActiveScene().name != gameOverMenu)
+
     // Main Menu var
-    public string mainMenu;
+    //public string mainMenu;
     public string gameOverMenu;
 
     // Game Over var
@@ -17,20 +19,18 @@ public class GameManager : MonoBehaviour {
     public float deathTimer = 1.0f;
 
     // Score var
-    public float score;
+    private float score;
     public Text scoreText;
 
     // High Score var
     private static float highScore;
     public Text highScoreText;
 
-    // Previous Score var
-    private static float lastScore;
-    public Text lastScoreText;
-
     // Internal var
-    private static GameManager gmngrInt;
+    public static GameManager gmngr;
 
+    /*
+    //private static GameManager gmngrInt;
     public static GameManager gmngr
     {
         get
@@ -47,27 +47,27 @@ public class GameManager : MonoBehaviour {
             }
         }
     }
+    */
+
+    void OnEnable ()
+    {
+        LoadGame ();
+    }
 
     /*
     void Awake ()
     {
-        if (gmngrInt == null)
+        if (gmngr == null)
         {
             DontDestroyOnLoad(gameObject);
-            gmngrInt = this;
+            gmngr = this;
         }
-        else if (gmngrInt != this)
+        else if (gmngr != this)
         {
             Destroy(gameObject);
         }
     }
     */
-
-    // Use this for initialization
-    void OnEnable ()
-    {
-
-    }
 
     void Start ()
     {
@@ -77,31 +77,27 @@ public class GameManager : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        if (SceneManager.GetActiveScene().name != mainMenu || SceneManager.GetActiveScene().name != gameOverMenu)
+        if (GameObject.FindGameObjectWithTag("Player") == null)
         {
-            if (GameObject.FindGameObjectWithTag("Player") == null)
-            {
-                gameOver = true;
-            }
-
-            if (!gameOver)
-            {
-                if (score > highScore)
-                {
-                    highScore = score;
-                }
-            }
-            else GameOver();
+            gameOver = true;
         }
+        if (!gameOver)
+        {
+            if (score >= highScore)
+            {
+                highScore = score;
+            }
+        }
+        else GameOver();
     }
 
-    void OnGUI()
+    void GUI ()
     {
-        int currentScore = (int)(score);
-        scoreText.text = currentScore.ToString();
+        //int sc = (int)(score);
+        scoreText.text = score.ToString();
 
-        int currentHighScore = (int)(highScore);
-        highScoreText.text = currentHighScore.ToString();
+        //int hs = (int)(highScore);
+        highScoreText.text = highScore.ToString();
     }
 
     void GameOver ()
@@ -113,7 +109,8 @@ public class GameManager : MonoBehaviour {
         {
             SceneManager.LoadScene(gameOverMenu);
         }
-        lastScore = score;
+
+        score = highScore;
         SaveGame();
     }
 
@@ -123,8 +120,9 @@ public class GameManager : MonoBehaviour {
         FileStream saveFile = File.Create(Application.persistentDataPath + "/SaveGame.sav");
 
         SaveData data = new SaveData();
+
+        //Data to Save
         data.highScore = highScore;
-        data.lastScore = lastScore;
 
         bf.Serialize(saveFile, data);
         saveFile.Close();
@@ -140,8 +138,8 @@ public class GameManager : MonoBehaviour {
             SaveData data = (SaveData)bf.Deserialize(saveFile);
             saveFile.Close();
 
+            //Data to Load
             highScore = data.highScore;
-            lastScore = data.lastScore;
         }
     }
 }

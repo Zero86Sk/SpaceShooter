@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 455688}
   - 114: {fileID: 11410724}
+  - 114: {fileID: 11443516}
   m_Layer: 0
   m_Name: $GameHUDManager
   m_TagString: Untagged
@@ -23,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171416}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 406, y: 103.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -41,6 +42,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetUpdateTime: 1
   fpsText: {fileID: 0}
+--- !u!114 &11443516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63091ec6575867f4eac3e7982c82fa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenu: main_menu
+  restartLevel: rm_level1
+  pauseMenuCanvas: {fileID: 0}
+  isPaused: 0
+  defaultButton: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
