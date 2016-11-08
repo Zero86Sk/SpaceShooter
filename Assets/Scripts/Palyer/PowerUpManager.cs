@@ -14,20 +14,44 @@ public class PowerUpManager : MonoBehaviour {
     {
         powerLevel += 1;
 
+        //Activate Single Shot
+        if (powerLevel == 0)
+        {
+            weapons[0].SetActive(true);
+            weapons[1].SetActive(false);
+            weapons[2].SetActive(false);
+            weapons[3].SetActive(false);
+            weapons[4].SetActive(false);
+        }
+
         //Activate Double Shot
         if (powerLevel == 1)
         {
             weapons[0].SetActive(false);
             weapons[1].SetActive(true);
-            weapons[2].SetActive(true);
+            weapons[2].SetActive(false);
+            weapons[3].SetActive(false);
+            weapons[4].SetActive(false);
         }
 
         //Activate Tripple Shot
         if (powerLevel == 2)
         {
-            weapons[0].SetActive(true);
-            weapons[1].SetActive(true);
+            weapons[0].SetActive(false);
+            weapons[1].SetActive(false);
             weapons[2].SetActive(true);
+            weapons[3].SetActive(false);
+            weapons[4].SetActive(false);
+        }
+
+        //Activate Overkill Shot
+        if (powerLevel == 3)
+        {
+            weapons[0].SetActive(false);
+            weapons[1].SetActive(false);
+            weapons[2].SetActive(true);
+            weapons[3].SetActive(true);
+            weapons[4].SetActive(true);
         }
     }
 
@@ -37,13 +61,20 @@ public class PowerUpManager : MonoBehaviour {
         {
             powerUpText.text = "Single Shot";
         }
+
         if (powerLevel == 1)
         {
-            powerUpText.text = "Double Shot";
+            powerUpText.text = "Tripple Laser";
         }
+
         if (powerLevel == 2)
         {
-            powerUpText.text = "Tripple Shot";
+            powerUpText.text = "Beam";
+        }
+
+        if (powerLevel == 3)
+        {
+            powerUpText.text = "OVERKILL!!!";
         }
     }
 }
