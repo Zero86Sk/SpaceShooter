@@ -112,8 +112,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360b2ffd051f62247a135df2bdf809ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 0}
   initialHealth: 1
-  particleOnHit: {fileID: 0}
+  currentHealth: 0
+  particleOnHit: {fileID: 184054, guid: 9b68da37c485f76409b9dd487969a864, type: 2}
   particleOnDeath: {fileID: 184054, guid: 474723f5988d9a14396b7229f1f250fd, type: 2}
 --- !u!212 &21285802
 SpriteRenderer:

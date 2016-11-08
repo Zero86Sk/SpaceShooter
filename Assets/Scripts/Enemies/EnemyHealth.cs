@@ -3,10 +3,11 @@ using System.Collections;
 
 public class EnemyHealth : MonoBehaviour {
 
-    private GameObject enemyShip;
+    //private GameObject enemyShip;
+    public GameObject objectToDestroy;
 
     public int initialHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
 
     // Particle var
     public GameObject particleOnHit;
@@ -16,7 +17,12 @@ public class EnemyHealth : MonoBehaviour {
     void Start ()
     {
         currentHealth = initialHealth;
-	}
+
+        if (objectToDestroy == null)
+        {
+            objectToDestroy = gameObject;
+        }
+    }
 
     void update ()
     {
@@ -39,8 +45,7 @@ public class EnemyHealth : MonoBehaviour {
             {
                 Instantiate(particleOnDeath, transform.position, particleOnDeath.transform.rotation);
             }
-
-            Destroy(gameObject);
+            Destroy(objectToDestroy);
         }
     }
 }

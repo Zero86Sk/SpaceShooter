@@ -8,6 +8,7 @@ TagManager:
   - Enemies
   - PlayerBullets
   - EnemyBullets
+  - PowerUp
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Enemies
   - PlayerBullets
   - EnemyBullets
-  - 
+  - PowerUp
   - 
   - 
   - 
@@ -50,6 +51,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 316126625
+    locked: 0
+  - name: PowerUp
+    uniqueID: 2134146501
     locked: 0
   - name: EnemyBullet
     uniqueID: 703548039

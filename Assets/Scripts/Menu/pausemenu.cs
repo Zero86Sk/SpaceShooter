@@ -9,7 +9,10 @@ public class PauseMenu : MonoBehaviour {
     public string mainMenu;
     public string restartLevel;
 
-    public Canvas pauseMenuCanvas;
+    public GameObject pauseMenuCanvasObj;
+    //public Canvas pauseMenuCanvas;
+    
+    //public GameObject mobileMenuCanvasObj;
     //public Canvas mobileMenuCanvas;
 
     public bool isMenuPaused = false;
@@ -37,12 +40,16 @@ public class PauseMenu : MonoBehaviour {
         if (isMenuPaused)
         {
             Time.timeScale = 0.0f;
-            pauseMenuCanvas.enabled = true;
+
+            //pauseMenuCanvas.enabled = true;
+            pauseMenuCanvasObj.SetActive(true);
         }
         else if (!isMenuPaused)
         {
             Time.timeScale = 1.0f;
-            pauseMenuCanvas.enabled = false;
+
+            //pauseMenuCanvas.enabled = false;
+            pauseMenuCanvasObj.SetActive(false);
         }
 
 #if  UNITY_STANDALONE
@@ -57,11 +64,13 @@ public class PauseMenu : MonoBehaviour {
 
 	if(isPaused)
 	{
-		mobileMenuCanvas.SetActive(false);
+        Time.timeScale = 0.0f;
+		mobileMenuCanvasObj.SetActive(false);
 	}
 	else if(!isPaused)
 	{
-		mobileMenuCanvas.SetActive(true);
+        Time.timeScale = 1.0f;
+		mobileMenuCanvasObj.SetActive(true);
 	}
 
 #endif
@@ -71,7 +80,6 @@ public class PauseMenu : MonoBehaviour {
     {
         isMenuPaused = !isMenuPaused;
         //Debug.Log("Paused");
-
     }
 
     // MENU OPTIONS

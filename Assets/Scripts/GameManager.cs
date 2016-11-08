@@ -27,10 +27,9 @@ public class GameManager : MonoBehaviour {
     public Text highScoreText;
 
     // Internal var
-    public static GameManager gmngr;
+    //public static GameManager gmngr;
 
-    /*
-    //private static GameManager gmngrInt;
+    private static GameManager gmngrInt;
     public static GameManager gmngr
     {
         get
@@ -47,7 +46,7 @@ public class GameManager : MonoBehaviour {
             }
         }
     }
-    */
+    
 
     void OnEnable ()
     {
@@ -68,6 +67,7 @@ public class GameManager : MonoBehaviour {
         }
     }
     */
+    
 
     void Start ()
     {
@@ -83,6 +83,9 @@ public class GameManager : MonoBehaviour {
         }
         if (!gameOver)
         {
+            scoreText.text = score.ToString();
+            highScoreText.text = highScore.ToString();
+
             if (score >= highScore)
             {
                 highScore = score;
@@ -94,10 +97,10 @@ public class GameManager : MonoBehaviour {
     void GUI ()
     {
         //int sc = (int)(score);
-        scoreText.text = score.ToString();
+        //scoreText.text = score.ToString();
 
         //int hs = (int)(highScore);
-        highScoreText.text = highScore.ToString();
+        //highScoreText.text = highScore.ToString();
     }
 
     void GameOver ()
@@ -110,7 +113,7 @@ public class GameManager : MonoBehaviour {
             SceneManager.LoadScene(gameOverMenu);
         }
 
-        score = highScore;
+        //score = highScore;
         SaveGame();
     }
 

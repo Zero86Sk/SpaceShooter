@@ -3,7 +3,8 @@ using System.Collections;
 
 public class PlayerHealth : MonoBehaviour {
 
-    private GameObject playerShip;
+    //private GameObject playerShip;
+    public GameObject objectToDestroy;
 
     public int initialHealth = 1;
     private int currentHealth;
@@ -16,7 +17,12 @@ public class PlayerHealth : MonoBehaviour {
     void Start ()
     {
         currentHealth = initialHealth;
-	}
+
+        if (objectToDestroy == null)
+        {
+            objectToDestroy = gameObject;
+        }
+    }
 
     void update ()
     {
@@ -39,7 +45,7 @@ public class PlayerHealth : MonoBehaviour {
             {
                 Instantiate(particleOnDeath, transform.position, particleOnDeath.transform.rotation);
             }
-            Destroy(gameObject);
+            Destroy(objectToDestroy);
         }
     }
 }
